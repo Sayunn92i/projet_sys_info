@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Fichier css -->
+        <link rel="stylesheet" type="text/css" href="./mini.css">
+    </head>
+
+<body>
+
+    <div class="content">
+        <!--Logo du jeu -->
+        <div id="logo"><img src="./imgCard/logo.png"></div>
+
+        <!--Affichage des differents boutons -->
+        <div class="option">
+
+            <button id="start">Jouer</button>
+            <button>Multijoueur</button>
+            <button id="regle">Règles</button>
+
+        </div>
+    <div class = "affiche_regle">
+
+       <center><h2>Règles</h2></center>
+       <p>Chaque joueur joue une colonie de grenouilles qui cherche à acquérir la suprématie de la mare en chassant les autres grenouilles.</p>
+       <p><b>Crôa</b> est un jeu simple et tactique dans lequel vous devez <b>prendre le contrôle d'une mare qui se dévoile au fur et à mesure </b>du déplacement de vos grenouilles.</p>
+       <p> Apprenez à utiliser au mieux ses ressources : les mâles pour faire des bébés et agrandir votre colonie, les moustiques et les nénuphars pour vous déployer plus rapidement et les roseaux pour vous reposer.</p> 
+       <p>Mais gare aux brochets et aux grenouilles adverses qui ne vous feront pas de cadeau !</p>
+       <h3>But du jeu :</h3>
+       <p>Pour gagner à Crôa, il faut être <span style ="background:red;">le dernier joueur à conserver sa Reine en jeu.</span></p>
+       <h3>Comment jouer :</h3>
+       <p>À votre tour, déplacez une de vos grenouilles vers une dalle adjacente. Retournez-la si elle est encore face cachée, et appliquez son "effet".</p>
+        <ul>
+            <li>S'il y a une Servante sur la même dalle que votre Reine, c'est l'une des deux que vous devez déplacer.</li>
+            <li>Vous n'avez pas le droit d'aller sur une dalle occupée par une de vos grenouilles (sauf Rondin).</li>
+            <li>Si vous arrivez sur une dalle occupée par une ou plusieurs Grenouilles adverses, vous les éliminez avant d'appliquer l'effet de la dalle.</li>
+            <li>Si vous arrivez sur une dalle occupée par une Reine adverse, son joueur est éliminé. Vous gagnez une Servante (si vous n'en avez pas déjà 6) que vous posez sur la même dalle que votre Reine.</li>
+            <li>Si vous déplacez votre Reine sur un Brochet vous êtes éliminé</li>
+        </ul>
+        
+       <h3>Fin de partie :</h3>
+       <p>Le gagnant est le dernier joueur qui possède sa Reine.</p>
+       <h3>Les différentes cartes :</h3>
+       <ul>
+        <li>Les grenouilles males :</li>
+        <img src ="./imgCard/frog_violet.png" width="50">
+        <img src ="./imgCard/frog_jaune.png" width="50">
+        <img src ="./imgCard/frog_bleu.png" width="50">
+        <img src ="./imgCard/frog_orange.png" width="50">
+        <img src ="./imgCard/frog_rose.png" width="50">
+        <img src ="./imgCard/frog_vert.png" width="50">
+        <p>Permettent à la grenouille mère de s'accoupler pour creer une nouvelle grenouille.</p>
+        <p>Vous ne pourrez plus accoupler votre Reine avec ce dernier ou son jumeau.</p>
+
+        <li>Le moustique :</li>
+        <img src ="./imgCard/mosquito.png" width="50">
+        <p>Vous pouvez déplacer une autre de vos grenouilles en appliquant les effets de la dalle sur laquelle elle arrive.</p>
+        <p> <span style ="background:red;">Si vous décidez de ne pas déplacer d'autre grenouille, c'est au joueur suivant de jouer.</span></p>
+        <li>Le nénuphar :</li>
+        <img src ="./imgCard/nenuphar.png" width="50">
+        <p>Votre grenouille rebondit sur une dalle adjacente de votre choix, dont vous appliquez l'effet.</p>
+        <p>Vous ne pouvez pas revenir sur la dalle que vous venez de quitter, sauf si toutes les dalles adjacentes sont déjà occupées par vos grenouilles.</p>
+        <p><span style ="background:red;">Vous ne pouvez jamais rester sur un Nénuphar.</span></p>
+        <li>Les roseaux :</li>
+        <img src ="./imgCard/reed.png" width="50">
+        <p>Rien ne se passe, c'est au joueur suivant de jouer.</p>
+        <li>La vase :</li>
+        <img src ="./imgCard/mud.png" width="50">
+        <p>Votre grenouille ne pourra pas être déplacée au tour suivant.</p>
+        <li>Le brochet :</li>
+        <img src ="./imgCard/brochet.png" width="50">
+        <p>Votre grenouille est mangée. <span style ="background:red;">S'il s'agit de votre Reine, vous avez perdu</span>, c'est au joueur suivant de jouer.</p>
+        <li>Le rondin</li>
+        <img src ="./imgCard/wood.png" width="50">
+        <p>Il peut y avoir jusqu'à deux Servantes sur un rondin en même temps (même appartenant à des joueurs différents) ou une seule Reine.</p>
+        <ol>
+            <li>Si une troisième Servante arrive sur le rondin, elle élimine la Servante de son choix.</li>
+            <li>Une Reine qui arrive sur un Rondin élimine toutes les Servantes qui s'y trouvent.</li>
+            <li>Une Reine est toujours éliminée par une grenouille adverse qui arrive sur le rondin où elle se trouve.</li>
+        </ol>
+        <p><span style ="background:red;">C'est au joueur suivant de jouer.</span></p>
+        <h3>Autres liens :</h3>
+        <p>Acheter le jeu :<a href ="https://www.amazon.fr/Origames-07106-Croa/dp/B01N2S1F3F" ><img src="./imgCard/panier.png" width="50" ></a></p>
+        <p>Lien wikipédia du <a href="https://fr.wikipedia.org/wiki/Cr%C3%B4a!">jeu</a></p>
+       </ul>
+       <center><button id="retour_regle">Retour</button></center>
+    </div>
+    
+    </div>
+    <!--Div contenant le plateau de jeu (s'affiche lorsque l'on clique sur le bouton start) -->
+    <div id="konva-holder"></div>
+    <center><button id="retour_menu">Retour</button></center>
+
+</body>
+</html>
