@@ -4,6 +4,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Script utilisé pour la création du jeu Croa : Konva.js -->
+        <script src="./node_modules/konva/konva.js" defer></script>
+        <script src="./Board.js" type="module"></script>
         <!--Fichier css -->
         <link rel="stylesheet" type="text/css" href="./mini.css">
     </head>
@@ -22,6 +25,10 @@
             <button id="regle">Règles</button>
 
         </div>
+    
+    </div>
+
+    <!-- Regles du jeu -->
     <div class = "affiche_regle">
 
        <center><h2>Règles</h2></center>
@@ -87,8 +94,6 @@
         <p>Lien wikipédia du <a href="https://fr.wikipedia.org/wiki/Cr%C3%B4a!">jeu</a></p>
        </ul>
        <center><button id="retour_regle">Retour</button></center>
-    </div>
-    
     </div>
     <!--Div contenant le plateau de jeu (s'affiche lorsque l'on clique sur le bouton start) -->
     <div id="konva-holder"></div>
